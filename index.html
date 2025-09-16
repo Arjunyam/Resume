@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ARJUN SAGAR — Resume</title>
+  <style>
+    :root{--accent:#0b74de;--muted:#6b7280;--bg:#f7f9fc}
+    *{box-sizing:border-box}
+    body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;line-height:1.5;color:#111;background:var(--bg);padding:24px}
+    .container{max-width:900px;margin:0 auto;background:#fff;border-radius:12px;box-shadow:0 8px 30px rgba(12,13,14,0.08);overflow:hidden}
+    header{display:flex;gap:20px;padding:28px;background:linear-gradient(90deg,var(--accent),#1da1f2);color:#fff;align-items:center}
+    .photo{width:96px;height:96px;border-radius:12px;background:rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;font-weight:700}
+    h1{margin:0;font-size:22px}
+    p.subtitle{margin:4px 0 0;opacity:0.95}
+    .grid{display:grid;grid-template-columns:1fr 320px}
+    main{padding:24px}
+    section{margin-bottom:18px}
+    .section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+    h2{margin:0;font-size:16px}
+    .muted{color:var(--muted);font-size:13px}
+    .edu-list, .exp-list, .skills-list, .pub-list{list-style:none;padding:0;margin:0}
+    .edu-item, .exp-item, .pub-item{padding:10px;border-left:3px solid transparent}
+    .edu-item:hover, .exp-item:hover{background:#fbfdff}
+    .chip{display:inline-block;padding:6px 10px;border-radius:999px;background:#f1f5f9;margin:4px 6px 4px 0;font-size:13px}
+    .right-col{padding:24px;border-left:1px solid #f1f5f9;background:#fbfdff}
+    .contact-row{display:flex;flex-direction:column;gap:6px}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none}
+    .controls{display:flex;gap:8px;align-items:center}
+    .search{width:100%;padding:8px;border-radius:8px;border:1px solid #e6eef9}
+    footer{padding:14px;text-align:center;background:#fbfdff;color:var(--muted);font-size:13px}
+    details{background:#fff;border-radius:8px;padding:10px}
+    @media(max-width:880px){.grid{grid-template-columns:1fr}.right-col{border-left:none;border-top:1px solid #f1f5f9}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div style="flex:1">
+        <div style="display:flex;align-items:center;gap:16px">
+          <div class="photo">AS</div>
+          <div>
+            <h1>ARJUN SAGAR YAMJALA</h1>
+            <p class="subtitle">Assistant Professor • Ph.D. (Machine Learning) — Researcher in AI & Federated Learning</p>
+            <p style="margin:6px 0 0;font-size:13px;opacity:0.95">Scopus ID: 59658674600 • ORCID: 0009-0002-3777-3560</p>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:right">
+        <div class="controls">
+          <button class="btn" onclick="printResume()">Print / Save PDF</button>
+          <button class="btn" style="background:#111" onclick="toggleTheme()">Toggle Dark</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section>
+          <div class="section-title"><h2>About</h2><span class="muted">Quick summary</span></div>
+          <p class="muted">Assistant Dean of Placements & Internships and Assistant Professor with experience across multiple engineering colleges. Research interests: Machine Learning, Federated Learning, Medical Imaging, Soft Computing.</p>
+        </section>
+
+        <section>
+          <div class="section-title"><h2>Education</h2><span class="muted">Degrees & milestones</span></div>
+          <ul class="edu-list">
+            <li class="edu-item"><strong>Ph.D. in Machine Learning</strong><br><span class="muted">Chaitanya (Deemed to be University), Hyderabad — Registered 2022; Thesis submitted on 28 Aug 2025</span></li>
+            <li class="edu-item"><strong>M.Tech in Software Engineering</strong><br><span class="muted">Ganapathi Engineering College, Warangal — 2012–2014 • 73.56% (Distinction)</span></li>
+            <li class="edu-item"><strong>B.Tech in Computer Science & Engineering</strong><br><span class="muted">Kakatiya Institute of Technology & Science, Kakatiya University — 61.44% (First Division)</span></li>
+            <li class="edu-item"><strong>Diploma — Govt. Polytechnic, Warangal</strong><br><span class="muted">State Board of Technical Education and Training — 60.29% (First Division)</span></li>
+            <li class="edu-item"><strong>School — St. Thomas Grammar High School, Warangal</strong><br><span class="muted">79.83% (Distinction)</span></li>
+          </ul>
+        </section>
+
+        <section>
+          <div class="section-title"><h2>Experience</h2><span class="muted">Selected roles</span></div>
+          <ul class="exp-list">
+            <li class="exp-item"><strong>Assistant Dean — Placements & Internships; Assistant Professor</strong><br><span class="muted">SR University — Present</span></li>
+            <li class="exp-item"><strong>Assistant Professor</strong><br><span class="muted">CMR Institute of Technology, Medchal — 2023–2024</span></li>
+            <li class="exp-item"><strong>Assistant Professor</strong><br><span class="muted">Kakatiya Institute of Technology & Science — 2021–2023</span></li>
+            <li class="exp-item"><strong>Assistant Professor</strong><br><span class="muted">SVS Engineering College — 2015–2021</span></li>
+          </ul>
+        </section>
+
+        <section>
+          <div class="section-title"><h2>Research & Publications</h2><span class="muted">Book chapters & papers</span></div>
+          <p class="muted">Selected Springer Nature book chapters on Automated Machine Learning, Neuro-Fuzzy Systems, Machine Learning in IoT, Neuromorphic Computing, Sustainability in IoT, and others. (Links available in the right column.)</p>
+          <details>
+            <summary style="cursor:pointer">Show publications list</summary>
+            <ul class="pub-list" id="pubList">
+              <li class="pub-item">Chapter: "Automated Machine Learning for Healthcare" — Springer Nature</li>
+              <li class="pub-item">Chapter: "Neuro-Fuzzy Systems: Neural Networks and Fuzzy Logic Integration" — Springer Nature</li>
+              <li class="pub-item">Paper: "An Approach in Using Mobile Relay with Less Energy Consumption in WSNs" — IJSETR</li>
+            </ul>
+          </details>
+        </section>
+
+        <section>
+          <div class="section-title"><h2>Projects</h2><span class="muted">Academic projects</span></div>
+          <ul>
+            <li><strong>B.Tech:</strong> Web Password Hashing</li>
+            <li><strong>M.Tech:</strong> Mobile Relay Configuration in Data-Intensive WSNs</li>
+          </ul>
+        </section>
+
+        <section>
+          <div class="section-title"><h2>Certifications</h2><span class="muted">Saylor Academy & Coursera</span></div>
+          <div>
+            <span class="chip">CS101 — Saylor</span>
+            <span class="chip">CS105 — Python</span>
+            <span class="chip">Responsible AI — Coursera</span>
+            <span class="chip">Intro to Generative AI — Coursera</span>
+          </div>
+        </section>
+
+        <section>
+          <div class="section-title"><h2>Honors & Activities</h2><span class="muted">Selected highlights</span></div>
+          <ul>
+            <li>International internship coordinator for California students</li>
+            <li>Organized national workshops & college tech events</li>
+          </ul>
+        </section>
+
+      </main>
+
+      <aside class="right-col">
+        <div style="margin-bottom:18px">
+          <div class="section-title"><h2>Contact</h2><span class="muted">Reach out</span></div>
+          <div class="contact-row">
+            <div><strong>Phone</strong><br><span class="muted">7013810556</span></div>
+            <div><strong>Email</strong><br><a href="mailto:yamjala99@gmail.com">yamjala99@gmail.com</a></div>
+            <div><strong>Links</strong><br><a href="#pub-links" id="pubLinksToggle">Show publication links</a></div>
+          </div>
+        </div>
+
+        <div style="margin-bottom:18px">
+          <div class="section-title"><h2>Skills</h2><span class="muted">Technical</span></div>
+          <div>
+            <span class="chip">C / C++</span>
+            <span class="chip">.NET</span>
+            <span class="chip">AutoCAD (Civil)</span>
+            <span class="chip">Machine Learning</span>
+          </div>
+        </div>
+
+        <div style="margin-bottom:18px">
+          <div class="section-title"><h2>Quick Filters</h2><span class="muted">Search publications</span></div>
+          <input id="pubSearch" class="search" placeholder="Type to filter publications..." oninput="filterPubs()">
+        </div>
+
+        <div id="pub-links">
+          <div class="section-title"><h2>Publication Links</h2><span class="muted">Springer & certificates</span></div>
+          <div style="font-size:13px">
+            <p class="muted">Springer chapters & certificates are linked below for quick verification.</p>
+            <ul style="padding-left:16px">
+              <li><a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_3" target="_blank">Automated Machine Learning for Healthcare</a></li>
+              <li><a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_4" target="_blank">Neuro-Fuzzy Systems</a></li>
+              <li><a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_5" target="_blank">Machine Learning in IoT</a></li>
+              <li><a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_6" target="_blank">Soft Computing Approaches in Robotics</a></li>
+              <li><a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_7" target="_blank">Neuromorphic Computing</a></li>
+              <li><a href="https://link.springer.com/chapter/10.1007/978-981-97-8533-9_8" target="_blank">Sustainability in IoT</a></li>
+              <li><a href="https://ijsrcseit.com/CSEIT1833423" target="_blank">IJSETR paper: Mobile Relay in WSNs</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="margin-top:18px">
+          <div class="section-title"><h2>Hobbies</h2><span class="muted">Interests</span></div>
+          <div class="muted">Skating · Chess · Swimming · Cricket · GTA Online</div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>Built from your uploaded resume. Edit, print or ask me to make it ATS-friendly.</footer>
+  </div>
+
+  <script>
+    const pubList = document.getElementById('pubList');
+    function filterPubs(){
+      const q = document.getElementById('pubSearch').value.toLowerCase();
+      Array.from(pubList.children).forEach(li=>{
+        li.style.display = li.textContent.toLowerCase().includes(q)?'block':'none';
+      });
+    }
+    function toggleTheme(){
+      const dark = document.documentElement.style.getPropertyValue('--bg') === '#0b0b0b';
+      if(!dark){
+        document.documentElement.style.setProperty('--bg','#0b0b0b');
+        document.body.style.background='#070707';
+        document.querySelectorAll('header').forEach(h=>h.style.filter='brightness(1.1)');
+        document.body.style.color='#e6eef9';
+      } else {
+        document.documentElement.style.setProperty('--bg','#f7f9fc');
+        document.body.style.background='var(--bg)';
+        document.body.style.color='#111';
+      }
+    }
+    function printResume(){ window.print(); }
+    // Smooth scroll to pub links
+    document.getElementById('pubLinksToggle').addEventListener('click', function(e){ e.preventDefault(); document.getElementById('pub-links').scrollIntoView({behavior:'smooth'}); });
+  </script>
+</body>
+</html>
